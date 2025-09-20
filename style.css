@@ -33,7 +33,11 @@ footer { background: #111; color: white; padding: 10px; margin-top: 20px; }
 .akun-list { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 20px; padding: 20px; }
 .akun-card { background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; text-align: center; }
 .akun-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-.akun-card img { width: 100%; height: auto; object-fit: cover; }
+.akun-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* biar gambar tetap proporsional */
+}
 .akun-card h3 { margin: 10px 0 5px; }
 .price { color: green; font-weight: bold; }
 
